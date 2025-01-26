@@ -18,7 +18,15 @@ def kelvinCelsius(num):
 def kelvinFahrenheit(num):
     return (num - 273.15) * 9/5 + 32
     
-print("1. Celsius para Fahrenheit\n2. Celsius para Kelvin\n3. Fahrenheit para Celsius\n4. Fahrenheit para Kelvin\n5. Kelvin para Celsius\n6. Kelvin para Fahrenheit\n")
+print("""
+1. Celsius para Fahrenheit
+2. Celsius para Kelvin
+3. Fahrenheit para Celsiu
+4. Fahrenheit para Kelvin
+5. Kelvin para Celsius
+6. Kelvin para Fahrenheit
+""")
+
 op = int(input("Escolha uma opção: "))
 
 if op < 1 or op > 6:
@@ -37,3 +45,4 @@ else:
         print(f"{num}K é igual a {kelvinCelsius(num):.2f}ºC")
     elif op == 6:
         print(f"{num}K é igual a {kelvinFahrenheit(num):.2f}ºF")
+
